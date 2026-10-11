@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-image: url('img/piano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys {
+    /* background-color: steelblue; */
+    backdrop-filter: blur(5px);
+    height: 400px;
+    width: 50%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.title {
+    font-family: 'Quicksand', monospace;
+    font-weight: bold;
+    color: rgb(194, 23, 80);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255), 1px 1px 0px rgb(255, 255, 255);
+    /* background-color: brown; */
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px;
+    height: 150px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:nth-of-type(even){
+    background-color: black;
+    color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 5px 8px rgb(158, 224, 58);
+
+}
+button.activated{
+    box-shadow: 0px 0px 5px 8px rgb(158, 224, 58);
+}
+
+.footer{
+    font-size: 1.5rem;
+}
+
+
+.footer:hover{
+color: aqua;
+}
+
+.footer a:active,.footer:visited{
+    color: black;
+}
+
+@media(max-width:920px){
+    .keys{
+        width: 90%;
+    }
+
+    
+}
+
+@media(max-width:600px){
+    .keys{
+        width: 80%;
+    }
+
+    button {
+    font-size: 1.2rem;
+    padding: 8px;
+    margin: 2px;
+}
+}
+
+a{
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+}
